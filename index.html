@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드래그 가능한 Todo 앱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="bg-white p-8 rounded-lg shadow-2xl w-full max-w-md">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Todo 리스트</h1>
+        <div class="flex mb-4">
+            <input type="text" id="todoInput" placeholder="할 일을 입력하세요" class="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+            <button onclick="addTodo()" class="bg-purple-600 text-white px-4 py-2 rounded-r-lg hover:bg-purple-700 transition duration-300">추가</button>
+        </div>
+        <ul id="todoList" class="space-y-2"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
